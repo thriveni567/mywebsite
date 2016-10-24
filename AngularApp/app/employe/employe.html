@@ -6,7 +6,7 @@
     <td>E.Id</td>
     <td>E.Name</td>
     <td>E.Salary</td>
-    
+    <td>Action<td>
     
     </tr>
 <tr ng-repeat="employe in employeList">
@@ -14,7 +14,7 @@
     <td>{{employe.employeId}}</td>
     <td>{{employe.employeName}}</td>
     <td>{{employe.employeSalary}}</td>
-    
+   <td> <input type="button" value="Remove" class="btn btn-primary" ng-click="removeRow(employe.employeId)"/></td>
     </tr>
 
 
